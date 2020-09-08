@@ -14,7 +14,7 @@ const Wrapper = styled('div')`
   background: ${({ theme }) => theme.colors.background};
 
   .sideBarUL li a {
-    color: ${({ theme }) => theme.colors.text};
+    color: #024C89;
   }
 
   .sideBarUL .item > a:hover {

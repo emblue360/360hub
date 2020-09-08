@@ -47,7 +47,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
 
 const Sidebar = styled('aside')`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   position: fixed;
   padding-left: 0px;
@@ -56,12 +56,13 @@ const Sidebar = styled('aside')`
   position: sticky;
   top: 0;
   padding-right: 0;
+  background-color: #F2F2F2;
   -webkit-box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, 0.4);
 
   @media only screen and (max-width: 1023px) {
     width: 100%;
     /* position: relative; */
-    height: 100vh;
+    height: 100%;
   }
 
   @media (min-width: 767px) and (max-width: 1023px) {

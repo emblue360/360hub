@@ -1,15 +1,16 @@
 import styled from '@emotion/styled';
 
 export const StyledHeading = styled('h1')`
-  font-size: 32px;
+  font-size: 2.5em;
+  font-family: 'Cairo', sans-serif;
   line-height: 1.5;
-  font-weight: 500;
-  border-left: 2px solid #00568F;
+  font-weight: 800;
+  border-left: 2px solid rgb(230,236,241);
   padding: 0 16px;
   flex: 1;
   margin-top: 0;
   padding-top: 0;
-  color: ${props => props.theme.colors.heading};
+  color: #FF573A;
 `;
 
 export const Edit = styled('div')`
@@ -56,7 +57,10 @@ export const StyledMainWrapper = styled.div`
       font-weight: 400;
     }
   }
-
+  h1, h2, h3 {
+    color:#015498;
+    font-weight: 500;
+  }
   a {
     transition: color 0.15s;
     color: ${props => props.theme.colors.link};

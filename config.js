@@ -11,10 +11,13 @@ const config = {
       "360",
     helpUrl: 'https://help.embluemail.com/',
     links: [
-      { text: 'Glosario', link: 'https://help.embluemail.com/glosario/' },
-      { text: 'Blog', link: 'http://blog.embluemail.com/' },
-      { text: 'Prueba emBlue', link: 'https://www.embluemail.com/planes.html' },
-      { text: 'Login', link: 'https://app.embluemail.com/' } 
+      {
+        
+      }
+      // { text: 'Glosario', link: 'https://help.embluemail.com/glosario/' },
+      // { text: 'Blog', link: 'http://blog.embluemail.com/' },
+      // { text: 'Prueba emBlue', link: 'https://www.embluemail.com/planes.html' },
+      // { text: 'Login', link: 'https://app.embluemail.com/' } 
       
     ],
     search: {

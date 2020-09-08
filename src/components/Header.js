@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
 import Link from './link';
 import Loadable from 'react-loadable';
-
+import logo from "../logo_360_w.png";
 import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
 
@@ -63,10 +63,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               link
               image
             }
-            headerLinks {
-              link
-              text
-            }
+            
           }
         }
       }
@@ -82,13 +79,10 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
-                  src={'https://www.embluemail.com/images/emblue-logo.svg'}
+                  src={logo}
                   alt={'logo'}
                 />
-                <div
-                className={'headerTitle displayInline'}
-                dangerouslySetInnerHTML={{ __html: config.header.title }}
-              />
+                
               </Link>
               
             </div>

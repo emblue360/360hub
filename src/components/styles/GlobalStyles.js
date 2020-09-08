@@ -4,6 +4,9 @@ export const baseStyles = injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Asap:400,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+ 
+  
 
   * {
     margin: 0;
@@ -288,8 +291,8 @@ export const baseStyles = injectGlobal`
   }
 
   .navBarBrand img {
-    width: 120px;
-    margin-right: 6px;
+    width: 100px;
+    margin: 1em;
     display: inline-block;
   }
   .navBarUL li {

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
 import { Global } from '@emotion/core';
-
 import { lightTheme, darkTheme } from './index';
 import Header from '../Header';
 import { baseStyles } from '../styles/GlobalStyles';
@@ -34,8 +33,13 @@ class ThemeProvider extends React.Component {
 
     const currentActiveTheme = isDarkThemeActive ? darkTheme : lightTheme;
 
+    const mainWrapper = {
+      height : '100vh',
+      display: 'grid',
+      gridAutoRows: 'min-content auto'
+    }
     return (
-      <div>
+      <div style={mainWrapper}>
         <Global styles={baseStyles} />
         <Header
           location={location}

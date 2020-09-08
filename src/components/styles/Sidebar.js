@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Sidebar = styled('aside')`
   width: 100%;
   border-right: 1px solid #ede7f3;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   position: fixed;
   padding-left: 24px;
@@ -43,7 +43,7 @@ export const Sidebar = styled('aside')`
     line-height: 1.5;
     padding: 7px 24px 7px 16px;
 
-    color: ${props => props.theme.colors.text};
+    color: #015498;
   }
 
   @media only screen and (max-width: 50rem) {
