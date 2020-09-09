@@ -2,6 +2,7 @@ require("dotenv").config();
 const queries = require("./src/utils/algolia");
 const config = require("./config");
 const plugins = [
+  `gatsby-plugin-netlify-cms`,
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   {
@@ -83,7 +84,7 @@ if (config.gatsby && !config.gatsby.trailingSlash) {
 }
 
 module.exports = {
-  pathPrefix: config.gatsby.pathPrefix,
+  pathPrefix: "/360hub",
   siteMetadata: {
     title: config.siteMetadata.title,
     description: config.siteMetadata.description,
